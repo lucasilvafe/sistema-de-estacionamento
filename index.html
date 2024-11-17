@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="CSS/home.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Usuários</title>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+      <img src="" alt="logo saftyParking">
+    </div>
+    <div id="financeiro">
+      <img id="coins-icon" src="assets/icons/coins.png" alt="Meus ganhos">
+      <p id="totalArrecadado">R$ 0,00</p>
+    </div>
+
+  </header>
+
+  <main>
+    <div id="left-side">
+      <form id="veicForm">
+        <label for="placa">Placa do Veículo</label>
+        <input type="text" id="placa" required placeholder="XXX0X00" maxlength="7"><br>
+
+        <label for="modelo">Modelo</label>
+        <input type="text" id="modelo" required placeholder="Modelo/Marca" maxlength="10"><br>
+
+        <h2>Selecione o tipo do veículo</h2>
+        <div id="tipo-veiculo">
+          <input type="radio" id="carro" name="tipo" value="CARRO" required>
+          <label id="tipo-veiculos" for="">Carro</label><br>
+          <input type="radio" id="moto" name="tipo" value="MOTO" required>
+          <label for="">Moto</label><br>
+          <input type="radio" id="caminhao" name="tipo" value="CAMINHÃO" required>
+          <label for="">Caminão</label>
+        </div>
+
+        <button id="btn-cadastro" type="submit">REGISTAR</button>
+      </form>
+
+    </div>
+
+    <div id="right-side">
+      <h1>VEÍCULOS ESTACIONADOS</h1>
+      <div id="info">
+        <p>PLACA</p>
+        <p>ENTRADA</p>
+        <p>TIPO VEÍCULO</p>
+        <p>MODELO</p>
+        <p>SAÍDA</p>
+      </div>
+      <ol id="listaVeiculos">
+        <!-- A lista de veiculos será inserida aqui -->
+      </ol>
+    </div>
+
+  </main>
+
+  <script src="renderer.js"></script>
+</body>
+
+</html>
