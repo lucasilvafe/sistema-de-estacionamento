@@ -12,6 +12,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Gta-font';
+    src: url('../assets/fonts/pricedown.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     background-color: rgb(26, 26, 26);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -29,21 +36,26 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 #totalArrecadado{
-    color: rgb(245, 245, 245);
-    font-size: 18px;
-    font-weight: 600;
+    color: rgb(236, 236, 236);
+    font-size: 25pt;
+    font-family: 'Gta-font';
+    -webkit-text-stroke: 2px black;
 }
 
 #logo{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    border: 1px rgb(56, 56, 56) solid;
+    margin-left: 40px;
+}
+
+img{
+    width: 220px;
+    height: 80px;
 }
 
 main{
@@ -75,7 +87,7 @@ form{
 
 input{
     border-radius: 5px;
-    border: none;
+    border: 3px solid rgb(75, 27, 151);
     width: 250px;
     height: 60px;
     text-align: center;
@@ -186,8 +198,9 @@ li{
 }
 
 #coins-icon{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
 }
 
 /*End Configuração dos icones*/

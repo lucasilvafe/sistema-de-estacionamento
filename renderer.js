@@ -69,7 +69,7 @@ async function loadVeic() {
 
       // Botão de exclusão
       const deleteButton = document.createElement('button');
-      deleteButton.innerHTML = '<img id="seta" src="assets/icons/arrow.png" alt="">'; // Ícone de lixeira + texto
+      deleteButton.innerHTML = '<img id="seta" src="assets/icons/arrow.png" alt="Remover">'; // Ícone de lixeira + texto
       deleteButton.classList.add('delete-button'); // Adiciona uma classe para estilização
       deleteButton.addEventListener('click', () => deleteVeic(veic.placa));
 
